@@ -1,0 +1,156 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+.container{
+   width: 100%;
+   height: 100vh; 
+   background:lightsteelblue;
+}
+.box,.box2,.box3{
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    height: 150px;
+    background: whitesmoke;
+    border-radius: 16px;
+    margin: 30px;
+}
+input[type=text] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: none;
+   border-bottom: 2px solid grey;
+}
+input[type=number] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: none;
+   border-bottom: 2px solid grey;
+}
+.box button{
+padding: 10px;
+background: #5784f5;
+color: #fff;
+font-size: 10px;
+border: none;
+outline: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.box button:active{
+background: #809ce2;
+}
+
+.box button::before{
+content: "Copied";
+position: absolute;
+top: -50px;
+right: 0px;
+background: #5c81dc;
+padding: 10px 20px;
+font-size: 15px;
+display: none;
+}
+.box button::after{
+content: "";
+position: absolute;
+top: -20px;
+right: 25px;
+width: 10px;
+height: 10px;
+background: #5c81dc;
+transform: rotate(45deg);
+display: none;
+}
+.box button:active button::before,
+.box button:active button::after {
+display:block;
+} 
+.box2 button{
+padding: 10px;
+background: #5784f5;
+color: #fff;
+font-size: 10px;
+border: none;
+outline: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.box2 button:active{
+background: #809ce2;
+}
+
+.box2 button::before{
+content: "Copied";
+position: absolute;
+top: -50px;
+right: 0px;
+background: #5c81dc;
+padding: 10px 20px;
+font-size: 15px;
+display: none;
+}
+.box2 button::after{
+content: "";
+position: absolute;
+top: -20px;
+right: 25px;
+width: 10px;
+height: 10px;
+background: #5c81dc;
+transform: rotate(45deg);
+display: none;
+}
+.box2 button:active button::before,
+.box2 button:active button::after {
+display:block;
+} 
+.box3 button{
+padding: 10px;
+background: #5784f5;
+color: #fff;
+font-size: 10px;
+border: none;
+outline: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.box3 button:active{
+background: #809ce2;
+}
+
+.box3 button::before{
+content: "Copied";
+position: absolute;
+top: -50px;
+right: 0px;
+background: #5c81dc;
+padding: 10px 20px;
+font-size: 15px;
+display: none;
+}
+.box3 button::after{
+content: "";
+position: absolute;
+top: -20px;
+right: 25px;
+width: 10px;
+height: 10px;
+background: #5c81dc;
+transform: rotate(45deg);
+display: none;
+}
+.box3 button:active button::before,
+.box3 button:active button::after {
+display:block;
+} 
+@media screen and (max-width: 600px) {
+    .box, .box2, .box3, input[type=submit] {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
